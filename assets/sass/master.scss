@@ -345,7 +345,8 @@ body {
 
 // end top header
 // start arrivals section
-.arrivals , .best-seller {
+.arrivals,
+.best-seller {
     // border: 1px solid red;
     justify-content: space-between;
     gap: 2rem;
@@ -373,7 +374,9 @@ body {
 }
 
 @media screen and (min-width:768px) {
-    .arrivals , .best-seller {
+
+    .arrivals,
+    .best-seller {
         >h2 {
             width: fit-content;
         }
@@ -382,7 +385,8 @@ body {
 
 // end arrivals section
 // start peronolize-care section
-.peronolize-care {
+.peronolize-care,
+.unparalleled-superiority {
     margin-block: 5rem;
     flex-direction: column;
     align-items: center;
@@ -439,4 +443,51 @@ body {
 }
 
 // end peronolize-care section
+// start unparalleled-superiority section
+.unparalleled-superiority {
+    >.row {
+        >.card {
+            position: relative;
+            flex: 1 1 400px;
+
+            >h3,
+            >p,
+            >.btn {
+                margin-bottom: 1rem;
+            }
+
+            >figure {
+                height: 40rem;
+
+                >img {
+                    position: absolute;
+                    height: 40rem;
+                    left: 0;
+                    bottom: 0;
+                    // border: 1px solid red;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width:768px) {
+    .unparalleled-superiority {
+        >.row {
+            >.card {
+                
+                &:nth-of-type(3){
+                  flex: 2 1 100%;
+                }
+                &:nth-of-type(1),
+                &:nth-of-type(5) {
+                    flex-grow: 3 ;
+                }
+            }
+        }
+    }
+}
+
+// start unparalleled-superiority section 
 // End main

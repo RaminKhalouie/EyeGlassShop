@@ -83,6 +83,7 @@ ul {
 
 .card {
   border-radius: 25px;
+  overflow: hidden;
   padding: 2rem;
 }
 .card > figure {
@@ -122,6 +123,10 @@ ul {
   background-color: #d6fec5;
 }
 
+.card-green-light {
+  background-color: #ddead8;
+}
+
 .card-yellow {
   background-color: #fdffae;
 }
@@ -132,6 +137,10 @@ ul {
 
 .card-rosegold {
   background-color: #fde2cd;
+}
+
+.card-rosegold-light {
+  background-color: #f8ede3;
 }
 
 .badge {
@@ -393,52 +402,62 @@ body {
     margin-left: -2rem;
   }
 }
-.arrivals, .best-seller {
+.arrivals,
+.best-seller {
   justify-content: space-between;
   gap: 2rem;
 }
-.arrivals > h2, .best-seller > h2 {
+.arrivals > h2,
+.best-seller > h2 {
   font-size: 4rem;
   font-weight: normal;
   width: 100%;
   display: flex;
   align-items: center;
 }
-.arrivals > .row, .best-seller > .row {
+.arrivals > .row,
+.best-seller > .row {
   margin-block: 2rem;
   gap: 1rem;
 }
-.arrivals > .row > .card, .best-seller > .row > .card {
+.arrivals > .row > .card,
+.best-seller > .row > .card {
   flex: 1 1 300px;
 }
 
 @media screen and (min-width: 768px) {
-  .arrivals > h2, .best-seller > h2 {
+  .arrivals > h2,
+  .best-seller > h2 {
     width: -moz-fit-content;
     width: fit-content;
   }
 }
-.peronolize-care {
+.peronolize-care,
+.unparalleled-superiority {
   margin-block: 5rem;
   flex-direction: column;
   align-items: center;
 }
-.peronolize-care > h2 {
+.peronolize-care > h2,
+.unparalleled-superiority > h2 {
   width: 100%;
   text-align: center;
   font-size: 5rem;
   line-height: 1;
   margin-bottom: 1rem;
 }
-.peronolize-care > p {
+.peronolize-care > p,
+.unparalleled-superiority > p {
   width: 100%;
   text-align: center;
   margin-bottom: 3rem;
 }
-.peronolize-care > .row {
+.peronolize-care > .row,
+.unparalleled-superiority > .row {
   gap: 1rem;
 }
-.peronolize-care > .row .card {
+.peronolize-care > .row .card,
+.unparalleled-superiority > .row .card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -446,14 +465,17 @@ body {
   flex: 1 1 500px;
   padding: 5rem;
 }
-.peronolize-care > .row .card .icon {
+.peronolize-care > .row .card .icon,
+.unparalleled-superiority > .row .card .icon {
   margin-bottom: 5rem;
 }
-.peronolize-care > .row .card > h3 {
+.peronolize-care > .row .card > h3,
+.unparalleled-superiority > .row .card > h3 {
   font-size: 3rem;
   text-align: center;
 }
-.peronolize-care > .row .card > p {
+.peronolize-care > .row .card > p,
+.unparalleled-superiority > .row .card > p {
   text-align: center;
 }
 
@@ -461,5 +483,32 @@ body {
   .peronolize-care > h2,
   .peronolize-care > p {
     width: 70%;
+  }
+}
+.unparalleled-superiority > .row > .card {
+  position: relative;
+  flex: 1 1 400px;
+}
+.unparalleled-superiority > .row > .card > h3,
+.unparalleled-superiority > .row > .card > p,
+.unparalleled-superiority > .row > .card > .btn {
+  margin-bottom: 1rem;
+}
+.unparalleled-superiority > .row > .card > figure {
+  height: 40rem;
+}
+.unparalleled-superiority > .row > .card > figure > img {
+  position: absolute;
+  height: 40rem;
+  left: 0;
+  bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .unparalleled-superiority > .row > .card:nth-of-type(3) {
+    flex: 2 1 100%;
+  }
+  .unparalleled-superiority > .row > .card:nth-of-type(1), .unparalleled-superiority > .row > .card:nth-of-type(5) {
+    flex-grow: 3;
   }
 }/*# sourceMappingURL=master.css.map */

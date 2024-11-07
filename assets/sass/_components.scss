@@ -64,6 +64,7 @@
 .card {
     // border: 2px solid red;
     border-radius: 25px;
+    overflow: hidden;
     padding: 2rem;
 
     >figure {
@@ -111,6 +112,10 @@
     background-color: v.$green;
 }
 
+.card-green-light {
+    background-color: v.$green-light;
+}
+
 .card-yellow {
     background-color: v.$yellow;
 }
@@ -121,6 +126,10 @@
 
 .card-rosegold {
     background-color: v.$rosegold;
+}
+
+.card-rosegold-light {
+    background-color: v.$rosegold-light;
 }
 
 // Badge
