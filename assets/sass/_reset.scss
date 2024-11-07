@@ -13,3 +13,12 @@ a {
 ul {
     list-style: none;
 }
+
+.row {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+    padding-inline: 1rem;
+}
