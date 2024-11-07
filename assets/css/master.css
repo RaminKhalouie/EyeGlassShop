@@ -61,17 +61,74 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 15px;
-  padding: 1rem;
+  border-radius: 2.5rem;
+  padding: 0.5rem 2rem !important;
+  gap: 0.5rem;
+  min-width: 15rem;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  cursor: pointer;
 }
 
 .btn-dark {
   background-color: #101415;
-  color: #fff;
+  color: #fefded;
 }
 
 .btn-secondary {
   background-color: #dbdbdb;
+  color: #101415;
+}
+
+.card {
+  border-radius: 25px;
+  padding: 2rem;
+}
+.card > figure {
+  width: 100%;
+}
+.card > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card > figure > figcaption {
+  margin-block: 2rem;
+}
+.card > figure > figcaption h3 {
+  font-size: 3rem;
+}
+.card > figure > figcaption > strong {
+  font-weight: normal;
+}
+.card > .price {
+  display: flex;
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.card > .btn {
+  width: 100%;
+  padding: 2rem !important;
+}
+
+.card-primary {
+  background-color: #f2f2f2;
+}
+
+.badge {
+  display: flex;
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  text-transform: capitalize;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.badge-primary {
+  background-color: #d5d5d5;
   color: #101415;
 }
 
@@ -318,5 +375,30 @@ body {
   .top-header > figure > img:nth-of-type(2), .top-header > figure > img:nth-of-type(4) {
     margin-top: 10rem;
     margin-left: -2rem;
+  }
+}
+.arrivals {
+  justify-content: space-between;
+  gap: 2rem;
+}
+.arrivals > h2 {
+  font-size: 4rem;
+  font-weight: normal;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.arrivals > .row {
+  margin-block: 2rem;
+  gap: 1rem;
+}
+.arrivals > .row > .card {
+  flex: 1 1 300px;
+}
+
+@media screen and (min-width: 768px) {
+  .arrivals > h2 {
+    width: -moz-fit-content;
+    width: fit-content;
   }
 }/*# sourceMappingURL=master.css.map */

@@ -344,4 +344,41 @@ body {
 }
 
 // end top header
+// start arrivals section
+.arrivals {
+    // border: 1px solid red;
+    justify-content: space-between;
+    gap: 2rem;
+
+    >h2 {
+        font-size: 4rem;
+        font-weight: normal;
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    // >.action {
+    //     border: 1px solid blue;
+    // }
+    >.row{
+        margin-block: 2rem;
+        gap: 1rem;
+
+        >.card{
+            flex: 1 1 300px;
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+    .arrivals {
+        >h2 {
+            width: fit-content;
+        }
+    }
+}
+
+// end arrivals section
 // End main
