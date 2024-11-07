@@ -362,11 +362,11 @@ body {
     // >.action {
     //     border: 1px solid blue;
     // }
-    >.row{
+    >.row {
         margin-block: 2rem;
         gap: 1rem;
 
-        >.card{
+        >.card {
             flex: 1 1 300px;
         }
     }
@@ -381,4 +381,62 @@ body {
 }
 
 // end arrivals section
+// start peronolize-care section
+.peronolize-care {
+    margin-top: 5rem;
+    flex-direction: column;
+    align-items: center;
+
+    >h2 {
+        width: 100%;
+        text-align: center;
+        font-size: 5rem;
+        line-height: 1;
+        margin-bottom: 1rem;
+    }
+
+    >p {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    >.row {
+        gap: 1rem;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex: 1 1 500px;
+            padding: 5rem;
+
+            .icon {
+                margin-bottom: 5rem;
+            }
+
+            >h3 {
+                font-size: 3rem;
+                text-align: center;
+            }
+
+            >p {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .peronolize-care {
+
+        >h2,
+        >p {
+            width: 70%;
+        }
+    }
+}
+
+// end peronolize-care section
 // End main
