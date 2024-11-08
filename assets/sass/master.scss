@@ -758,6 +758,158 @@ main {
 }
 
 // end instagram section
-
-
 // End main
+
+// Start footer
+footer {
+    background-color: v.$black-color;
+    color: v.$btn-color;
+    padding-block: 4rem;
+
+    >.row {
+        justify-content: space-between;
+        margin-bottom: 1rem;
+
+        &:nth-of-type(1) {
+            gap: 2rem;
+
+            >figure {
+                width: 100%;
+                // border: 1px solid red;
+
+                >figcaption {
+                    margin-top: 1rem;
+                    text-align: justify;
+                }
+
+                &:last-of-type {
+                    border-radius: 5px;
+                    overflow: hidden;
+                    perspective: 800px;
+                    min-height: 30rem;
+
+                    >div {
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        transition: 1s;
+                        transform-style: preserve-3d;
+
+
+                        >img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            object-position: top 50%;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            filter: saturate(200%);
+                        }
+
+                        >figcaption {
+                            transform: rotateY(180deg);
+                            backface-visibility: hidden;
+                            display: flex;
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            top: 0;
+                            left: 0;
+                            justify-content: center;
+                            align-items: flex-start;
+                            padding-left: 2rem;
+                            flex-direction: column;
+                            background-color: #deebd9;
+                            color: v.$black-color;
+                            margin-top: 0;
+
+                            >h3 {
+                                font-size: 3rem;
+                                line-height: 1.21;
+                                margin-bottom: 2rem;
+                                text-shadow: 5px 5px 20px grey;
+                            }
+
+                            >a {
+                                display: flex;
+                                align-items: center;
+                                gap: 1rem;
+                                transition: 0.4s;
+
+                                &:hover {
+                                    scale: 1.3;
+                                }
+
+                                // border: 1px solid red;
+                            }
+                        }
+
+
+                    }
+
+                    &:hover {
+                        >div {
+                            transform: rotateY(180deg);
+                        }
+                    }
+                }
+            }
+
+            >div {
+                width: 48%;
+                // border: 1px solid red;
+
+                >span {
+                    opacity: 0.4;
+                    font-weight: bold;
+                    font-size: 1.8rem;
+                }
+
+                >ul {
+                    padding-left: 2rem;
+
+                    >li {
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        height: 4rem;
+
+                        >a {
+                            >span {
+                                width: 100%;
+                                justify-content: start;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &:nth-of-type(2) {
+
+            border-top: 2px solid v.$btn-color;
+
+            >p {
+                width: 100%;
+                text-align: center;
+                padding: 2rem;
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width : 768px) {
+    footer {
+        >.row {
+            &:nth-of-type(1) {
+                >* {
+                    flex: 1 1 15rem;
+                }
+            }
+        }
+    }
+}
+
+// End footer
