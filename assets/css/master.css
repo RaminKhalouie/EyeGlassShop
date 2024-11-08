@@ -554,6 +554,29 @@ body {
     flex-grow: 2;
   }
 }
+.moto {
+  width: 100%;
+  padding: 5rem;
+  background-color: #101415;
+  margin-bottom: 5rem;
+  color: #fefded;
+  overflow: hidden;
+}
+.moto > .text {
+  font-size: 6rem;
+  white-space: nowrap;
+  font-weight: bold;
+  animation: marque 10s linear infinite;
+}
+
+@keyframes marque {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
 .article-style-1 {
   margin-block: 5rem;
   flex-direction: column;

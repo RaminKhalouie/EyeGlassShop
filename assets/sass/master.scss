@@ -589,6 +589,35 @@ body {
 }
 
 // end popular-brand section 
+// start moto section 
+.moto {
+    width: 100%;
+    padding: 5rem;
+    background-color: v.$black-color;
+    margin-bottom: 5rem;
+    color: v.$btn-color;
+    overflow: hidden;
+
+    >.text {
+        font-size: 6rem;
+        white-space: nowrap;
+        font-weight: bold;
+        animation: marque 10s linear infinite;
+    }
+}
+
+@keyframes marque {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+// end moto section 
+
 
 // ARTICLE STYLE
 .article-style-1 {
