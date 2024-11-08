@@ -30,7 +30,7 @@ ul {
 .row {
   display: flex;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: auto;
   flex-wrap: wrap;
   padding-inline: 1rem;
@@ -162,6 +162,29 @@ ul {
   color: #101415;
 }
 
+.article-style-1 {
+  margin-block: 5rem;
+  flex-direction: column;
+  align-items: center;
+}
+.article-style-1 > h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 5rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+.article-style-1 > p {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .article-style-1 > p {
+    width: 50%;
+  }
+}
 html {
   font-size: 62.5%;
 }
@@ -644,26 +667,49 @@ main > section {
   text-align: center;
 }
 
-.article-style-1 {
-  margin-block: 5rem;
-  flex-direction: column;
-  align-items: center;
+.instagram strong {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  margin-top: 0.5rem;
 }
-.article-style-1 > h2 {
+.instagram > .row {
+  gap: 1rem;
+  margin-top: 4rem;
+}
+.instagram > .row > a {
+  flex: 1 1 25rem;
+}
+.instagram > .row > a > figure {
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
   width: 100%;
-  text-align: center;
+  aspect-ratio: 1/1;
+}
+.instagram > .row > a > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.instagram > .row > a > figure::after {
+  content: "\f16d";
   font-size: 5rem;
-  line-height: 1;
-  margin-bottom: 1rem;
-}
-.article-style-1 > p {
+  color: #fefded;
+  justify-content: center;
+  align-items: center;
+  font-family: "Font Awesome 6 Brands";
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  text-align: center;
-  margin-bottom: 3rem;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: 0.6s;
 }
-
-@media screen and (min-width: 768px) {
-  .article-style-1 > p {
-    width: 50%;
-  }
+.instagram > .row > a > figure:hover::after {
+  opacity: 1;
 }/*# sourceMappingURL=master.css.map */

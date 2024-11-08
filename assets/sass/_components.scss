@@ -54,10 +54,12 @@
     background-color: v.$black-color;
     color: v.$btn-color;
 }
+
 .btn-light {
     background-color: v.$btn-color;
     color: v.$black-color;
 }
+
 .btn-secondary {
     background-color: v.$grey-color;
     color: v.$black-color;
@@ -147,4 +149,34 @@
 .badge-primary {
     background-color: v.$bage-background;
     color: v.$black-color;
+}
+
+// ARTICLE STYLE
+.article-style-1 {
+    margin-block: 5rem;
+    flex-direction: column;
+    align-items: center;
+
+    >h2 {
+        width: 100%;
+        text-align: center;
+        font-size: 5rem;
+        line-height: 1;
+        margin-bottom: 1rem;
+    }
+
+    >p {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .article-style-1 {
+        >p {
+            width: 50%;
+        }
+
+    }
 }

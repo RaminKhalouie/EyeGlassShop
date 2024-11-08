@@ -698,38 +698,66 @@ main {
     }
 }
 
-@media screen and (min-width:700px) {}
 
 // end explore section
-
-// ARTICLE STYLE
-.article-style-1 {
-    margin-block: 5rem;
-    flex-direction: column;
-    align-items: center;
-
-    >h2 {
-        width: 100%;
-        text-align: center;
-        font-size: 5rem;
-        line-height: 1;
-        margin-bottom: 1rem;
+// start instagram section
+.instagram {
+    strong {
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+        margin-top: 0.5rem;
     }
 
-    >p {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 3rem;
-    }
-}
+    >.row {
+        gap: 1rem;
+        margin-top: 4rem;
 
-@media screen and (min-width:768px) {
-    .article-style-1 {
-        >p {
-            width: 50%;
+        >a {
+            flex: 1 1 25rem;
+
+            >figure {
+                border-radius: 1rem;
+                overflow: hidden;
+                position: relative;
+                width: 100%;
+                aspect-ratio: 1/1;
+
+                >img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                &::after {
+                    content: "\f16d";
+                    font-size: 5rem;
+                    color: v.$btn-color;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: "Font Awesome 6 Brands";
+                    display: flex;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.4);
+                    opacity: 0;
+                    transition: 0.6s;
+                }
+
+                &:hover {
+                    &::after {
+                        opacity: 1;
+                    }
+                }
+            }
         }
-
     }
 }
+
+// end instagram section
+
 
 // End main
