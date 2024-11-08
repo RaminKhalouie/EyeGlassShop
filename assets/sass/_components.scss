@@ -54,7 +54,10 @@
     background-color: v.$black-color;
     color: v.$btn-color;
 }
-
+.btn-light {
+    background-color: v.$btn-color;
+    color: v.$black-color;
+}
 .btn-secondary {
     background-color: v.$grey-color;
     color: v.$black-color;
