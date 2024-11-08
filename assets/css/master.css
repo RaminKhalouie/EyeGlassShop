@@ -208,10 +208,20 @@ ul {
 
 @keyframes slide-in-right {
   from {
-    transform: translateX(300%);
+    transform: translateX(-300%);
   }
   to {
     transform: translateX(0);
+  }
+}
+@media screen and (min-width: 768px) {
+  @keyframes slide-in-right {
+    from {
+      transform: scale(0) rotate(180deg);
+    }
+    to {
+      transform: scale(1) rotate(0);
+    }
   }
 }
 .scroll__scale {
