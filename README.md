@@ -10,13 +10,13 @@
 
 -📎 [Demo Project](https://raminkhalouie.github.io/EyeGlassShop/)
 
--👩‍💻 Developed by Ramin Khalouie
+-🧑🏻‍💻 Developed by Ramin Khalouie
 
-- Created - 2024
+-🗓 Created - 2024
 
 -🔧 Technologies Used - HTML , CSS  , SASS , JavaScript
 
 
-- Role - Frontend
+-📌 Role - Frontend
 
 -📬 How to reach me : with my  [linkedin](https://www.linkedin.com/in/ramin-khalouie-83902a20a/)
