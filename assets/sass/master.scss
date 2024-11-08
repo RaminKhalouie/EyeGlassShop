@@ -387,23 +387,7 @@ body {
 // start peronolize-care section
 .peronolize-care,
 .unparalleled-superiority {
-    margin-block: 5rem;
-    flex-direction: column;
-    align-items: center;
 
-    >h2 {
-        width: 100%;
-        text-align: center;
-        font-size: 5rem;
-        line-height: 1;
-        margin-bottom: 1rem;
-    }
-
-    >p {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 3rem;
-    }
 
     >.row {
         gap: 1rem;
@@ -428,16 +412,6 @@ body {
             >p {
                 text-align: center;
             }
-        }
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .peronolize-care {
-
-        >h2,
-        >p {
-            width: 70%;
         }
     }
 }
@@ -474,15 +448,17 @@ body {
 
 @media screen and (min-width:768px) {
     .unparalleled-superiority {
+
         >.row {
             >.card {
-                
-                &:nth-of-type(3){
-                  flex: 2 1 100%;
+
+                &:nth-of-type(3) {
+                    flex: 2 1 100%;
                 }
+
                 &:nth-of-type(1),
                 &:nth-of-type(5) {
-                    flex-grow: 3 ;
+                    flex-grow: 3;
                 }
             }
         }
@@ -490,4 +466,158 @@ body {
 }
 
 // start unparalleled-superiority section 
+
+// start popular-brand section
+.popular-brand {
+    >.row {
+        gap: 1rem;
+        margin-bottom: 1rem;
+
+        >figure {
+            --var-h: 8rem;
+            // border: 1px solid red;
+            width: 100%;
+            position: relative;
+            height: var(--var-h);
+            border-radius: 25px;
+            overflow: hidden;
+            cursor: pointer;
+
+            >img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            >figcaption {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                color: v.$btn-color;
+                font-size: 3rem;
+                width: 100%;
+                height: var(--var-h);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+
+        }
+
+        &:nth-of-type(1) {
+            >figure {
+                &:nth-of-type(1) {
+                    >figcaption {
+                        background-image: linear-gradient(to bottom, #fff0,
+                                #5fe3d4b3 65%);
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    >figcaption {
+                        background-image: linear-gradient(to bottom, #fff0,
+                                #89d28db3 65%);
+                    }
+                }
+
+                &:nth-of-type(3) {
+                    >figcaption {
+                        background-image: linear-gradient(to bottom, #fff0,
+                                #f6ae01b3 65%);
+                    }
+                }
+
+
+            }
+        }
+
+        &:nth-of-type(2) {
+            >figure {
+                &:nth-of-type(1) {
+                    >figcaption {
+                        background-image: linear-gradient(to bottom, #fff0,
+                                #f0002fb3 65%);
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    >figcaption {
+                        background-image: linear-gradient(to bottom, #fff0,
+                                #a75427b3 65%);
+                    }
+                }
+
+                &:nth-of-type(3) {
+                    >figcaption {
+                        background-image: linear-gradient(to bottom, #fff0,
+                                #fd92a6b3 65%);
+                    }
+                }
+            }
+
+        }
+    }
+
+    >div:last-child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4rem;
+        margin-bottom: 5rem;
+        // border: 1px solid red;
+        height: 7rem;
+    }
+
+}
+
+@media screen and (min-width:768px) {
+    .popular-brand {
+        >.row {
+            >figure {
+                height: 50rem;
+                flex: 1 1 200px;
+                transition: 1s;
+
+                &:hover {
+                    flex-grow: 2;
+                }
+            }
+        }
+    }
+}
+
+// end popular-brand section 
+
+// ARTICLE STYLE
+.article-style-1 {
+    margin-block: 5rem;
+    flex-direction: column;
+    align-items: center;
+
+    >h2 {
+        width: 100%;
+        text-align: center;
+        font-size: 5rem;
+        line-height: 1;
+        margin-bottom: 1rem;
+    }
+
+    >p {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .article-style-1 {
+        >p {
+            width: 50%;
+        }
+
+    }
+}
+
 // End main
